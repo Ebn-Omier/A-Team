@@ -1,0 +1,32 @@
+//_hellpars: vars
+  @import "sass/vars.scss";
+
+//_hellpars: mixins / functions.
+  @import "sass/helpars.scss";
+
+//_global style / global classes
+  @import "sass/global.scss";
+
+//_header
+  @import "sass/sections/header.scss";
+
+//_servises
+  @import "sass/sections/servises.scss";
+
+//_works
+  @import "sass/sections/works.scss";
+
+//_teame
+  @import "sass/sections/teame.scss";
+
+//_price
+  @import "sass/sections/price.scss";
+
+//_resume
+  @import "sass/sections/resume.scss";
+
+//_resume
+  @import "sass/sections/blog.scss";
+
+//_contact
+  @import "sass/sections/contact.scss";

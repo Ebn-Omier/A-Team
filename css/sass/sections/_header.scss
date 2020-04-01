@@ -1,0 +1,106 @@
+/* start header style */
+.header {
+  background: $headerBackgroundColor;
+  //_theMenu
+    .theMenu {
+      position: fixed;
+      z-index: 50;
+      top: 0px;
+      right: -400px;
+      width: 400px;
+      height: 100%;
+      padding: 50px 30px 0px 30px;
+      background: #191331;
+      border-left: 2px solid $minColor;
+      @include phone  {
+        width: 70%;
+        right: -100%;
+      }
+      .clossMenu {
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      .linkes {
+        list-style-type: none;
+        padding: 0px;
+        li {
+          a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            padding: 10px 0px;
+            border-bottom: 2px solid rgb(61, 53, 93);
+            font-size: 20px;
+            font-family: initial;
+          }
+        }
+        .active a {
+          color: $minColor;
+        }
+      }
+    }
+  //_theMenu
+
+  //_start navigetion style
+    .fixedNav {
+      position: fixed;
+      background: $headerBackgroundColor;
+      padding-top: 0px !important;
+      width: 100%;
+      transition: .5s;
+      z-index: 40;
+    }
+    .navigetion {
+      padding-top: 20px;
+      transition: .5s;
+      z-index: 40;
+      .logo {
+        float: $f_lefe;
+        margin: 0px;
+        color: #fff;
+        font-family: Vijaya;
+        font-size: 28px;
+        span {
+          font-family: Gabriola;
+          font-size: 50px;
+          color: $minColor;
+        }
+      }
+      .slidMeun {
+        color: #fff;
+        font-size: 27px;
+        margin: 15px 0px;
+        float: $f_right;
+        cursor: pointer;
+      }
+    }
+  //_End navigetion style
+
+  //_headerContent
+    .headerContent {
+
+    }
+  //_headerContent
+
+}
+/* End header style */
+
+/* minArtecal */
+.minArtecal {
+  margin: 100px 0px;
+  img {
+    width: 100%;
+  }
+  .minTextContent {
+    padding: 50px;
+    background: #fff;
+    @include phone  {
+      padding: 50px 20px;
+    }
+  }
+}
+/* minArtecal */

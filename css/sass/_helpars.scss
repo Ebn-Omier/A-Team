@@ -1,0 +1,108 @@
+
+//_media Query
+  @mixin phone {  //_phone screen
+    @media (max-width: 676px) {  @content;  }
+  }
+  @mixin tablet {  //_tablet and larg phone
+    @media (max-width: 991px) {  @content;  }
+  }
+  @mixin small-screen {  //_labtop and small screen
+    @media (min-width: 992px) {  @content;  }
+  }
+  @mixin larg-screen {  //_larg screen and big divies
+    @media (min-width: 1200px) {  @content;  }
+  }
+//_media Query
+
+.pargraph {
+  font-family: $textFontFamily;
+  font-size: 25px;
+  line-height: 27px;
+}
+.heading {
+  color: $headingColor;
+  font-family: Gabriola;
+  font-size: 60px;
+}
+.formSeting {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 30px 0px;
+}
+.inputSeting {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  width: 80%;
+  margin: 5px 0px;
+}
+.subButton {
+  width: 50%;
+  height: 45px;
+  background: #bbb8e8;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.smallTitle {
+  color: #bfb9b9;
+  display: block;
+  font-size: 20px;
+  border-left: 3px solid #c7c2c2;
+  padding: 0px 5px;
+  font-weight: 500;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    border-bottom: 3px solid #CDDC39;
+    width: 100px;
+    margin-left: 5px;
+  }
+}
+.largTitle {
+  color: #9e9ec5;
+  font-size: 50px;
+  display: block;
+  font-weight: 600;
+  font-family: Gabriola;
+}
+%resButtonsIcons {
+  color: $minColor;
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
+  background: #616198;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+%TowParts {
+  float: left;
+  width: 50%;
+  @include phone {
+    width: 100%;
+    float: none;
+  }
+}
+#minText {
+  font-size: 20px;
+  color: #868181;
+  font-family: serif;
+}
+#more, #less{
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  background: $minColor;
+  width: max-Content;
+  padding: 5px 20px;
+  margin-top: 20px;
+}

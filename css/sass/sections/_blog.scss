@@ -1,0 +1,82 @@
+.blog {
+  padding: 50px 0px;
+  .blogLeft {
+    width: 30%;
+    padding: 50px 30px 50px 0px;
+    float: left;
+    @include phone {
+      width: $minWidth;
+      padding: 0px;
+    }
+  }
+  .blogBoxes {
+    padding: 50px 0px;
+    width: 70%;
+    float: right;
+    @include phone {
+      width: $minWidth;
+      padding: 30px 0px;
+    }
+    .box {
+      float: left;
+      border: 1px solid rgba(204, 204, 204, 0.47);
+      /*width: $minWidth /3;
+      @include tablet {
+        width: $minWidth /2;
+      }
+      @include phone {
+        width: $minWidth;
+      }*/
+      img {
+        width: 100%;
+      }
+      .mySocialIcons {
+        width: 100%;
+        padding: 10px 0px;
+        a {
+          width: max-content;
+          padding-right: 10px;
+          display: block;
+          float: left;
+          @each $icon, $color in
+            (fa-facebook, #3b5998),
+            (fa-twitter, #1da1f2),
+            (fa-instagram, #e1306c),
+            (fa-youtube, #d1180a) {
+            .#{$icon} { background: $color; }
+          }
+          i {
+            font-size: 25px;
+            color: #fff;
+          //  background: black;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            padding-top: 5px;
+          }
+        }
+      }
+      .blogPadding {
+        padding: 0px 10px 20px 10px;
+      }
+      .plogPara {
+        color: #8e8888;
+        margin: 5px 0px;
+      }
+      .blogLink {
+        text-decoration: none;
+        color: #545151;
+        border: 1px solid rgba(204, 204, 204, 0.47);
+        padding: 5px 20px;
+        display: block;
+        width: max-content;
+        margin-top: 15px;
+        transition: .3s;
+        &:hover {
+          color: #000;
+          background: #d9d9da;
+        }
+      }
+    }
+  }
+}

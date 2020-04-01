@@ -1,0 +1,58 @@
+.contact {
+  margin-top: 50px;
+  background-image: url(../img/contact.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  .contOver {
+    padding: 50px 0px;
+    background: rgba(73, 73, 142, 0.61);
+    .inputFilds {
+      width: 40%;
+      margin: 25px auto;
+      @include small-screen { width: 50%; }
+      @include tablet { width: 70%; }
+      @include phone { width: 100%; }
+      input {
+        background: none;
+        border: none;
+        border-bottom: 1px solid $minColor;
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0px;
+        color: #fff;
+      }
+      textarea {
+        background: none;
+        border: 1px solid $minColor;
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0px;
+        color: #fff;
+      }
+      button {
+        height: 40px;
+        width: 150px;
+        background: none;
+        border: 1px solid $minColor;
+        color: rgba(254, 254, 255, 0.76);
+        padding: 5px 30px;
+        font-weight: bold;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+          width: 200px;
+          //color: #fff;
+          background: #1e1d3c;
+          //  border: 1px solid #fff;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: #0d0d2d;
+  color: #ccc;
+  text-align: center;
+  padding: 5px;
+}

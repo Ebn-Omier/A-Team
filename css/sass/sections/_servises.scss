@@ -1,0 +1,75 @@
+/* servises */
+.servises {
+  padding: 100px 0px;
+  .theServises {
+    padding-top: 50px;
+    .servBox {
+      width: $minWidth / 3;
+      text-align: center;
+      padding: 10px;
+      float: left;
+      margin: 20px 0px;
+      transition: .5s;
+      @include tablet { width: $minWidth / 2; }
+      @include phone { width: $minWidth / 1; }
+      /*
+      &:hover {
+        background: #ccc;
+      }
+      */
+      i {
+        font-size: 60px;
+      }
+      .servBoxText {
+        h2 {
+          margin: 10px 0px;
+          font-size: 35px;
+          display: block;
+          font-weight: 600;
+          font-family: Gabriola;
+        }
+        p {
+          margin: 5px;
+          font-size: 20px;
+          color: #868181;
+          font-family: serif;
+        }
+      }
+    }
+  }
+  //_servisesCounts
+    .servisesCounts {
+      padding: 50px 0px;
+      margin-top: 100px;
+      background: #1d1d40;
+      .countBox {
+        width: $minWidth / 4 ;
+        padding: 10px;
+        text-align: center;
+        float: left;
+        @include phone {
+          width: $minWidth / 2 ;
+        }
+        i {
+          display: block;
+          font-size: 50px;
+          color: #c1c1d8;
+        }
+        span {
+          color: #55c35e;
+          font-weight: bold;
+          font-size: 20px;
+          font-family: sans-serif;
+          margin: 5px 0px;
+          display: block;
+        }
+        p {
+          color: #c1c1d8;
+          font-weight: 500;
+          margin: 0px;
+        }
+      }
+    }
+  //_servisesCounts
+}
+/* servises */

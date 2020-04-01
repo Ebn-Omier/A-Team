@@ -1,0 +1,110 @@
+.price {
+  background: #fff;
+  background-image: url(../img/header-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  //background-repeat: no-repeat;
+  background-size: cover;
+  .overLay {
+    padding: 100px 0px;
+    background: rgba(245, 245, 249, 0.88);
+  }
+  .planBox {
+    float: left;
+    margin: auto;
+    width: $minWidth / 3;
+    @include phone {
+      width: $minWidth;
+      float: none;
+    }
+    .cont {
+      width: max-content;
+      margin: 30px auto;
+      border: 1px solid  rgb(234, 230, 230);
+      padding: 50px 20px;
+      @include tablet {
+        padding: 50px 10px;
+        background: #49498e;
+        border-radius: 0px 100px 0px 100px;
+      }
+      transition: .7s;
+      &:hover {
+        background: #49498e;
+        border-radius: 0px 100px 0px 100px;
+      }
+      &:hover > h2 {
+        color: #fff;
+      }
+      &:hover > ul li {
+        color: #fff;
+      }
+      h2 {
+        font-size: 50px;
+        margin: 0px;
+        font-family: fantasy;
+        text-align: center;
+        transition: .5s;
+        @include tablet  {
+          color: #fff;
+        }
+      }
+      h3 {
+        font-size: 25px;
+        margin: 20px 0px;
+        font-family: serif;
+        color: #a6a6c1;
+        text-align: center;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          border-bottom: 2px solid #fff;
+          width: 30%;
+          left: 35%;
+        }
+      }
+      ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        li {
+          font-size: 20px;
+          font-weight: 500;
+          color: #c7c4c4;
+          padding: 3px 30px;
+          transition: .5s;
+          @include tablet { padding: 3px 0px; font-size: 19px; }
+          @include phone { padding: 3px 30px; }
+          i {
+            color: $minColor;
+            font-size: 23px;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        display: block;
+        margin: 30px auto 10px auto;
+        width: 60%;
+        background: #c0c0c7;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #49498e;
+        text-align: center;
+        transition: .5s;
+        @include tablet {
+          background: $minColor;
+          color: black;
+          border-radius: 0px 20px 0px 20px;
+        }
+        &:hover {
+          background: $minColor;
+          color: black;
+          border-radius: 0px 20px 0px 20px;
+        }
+      }
+    }
+  }
+}

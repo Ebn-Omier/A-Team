@@ -1,0 +1,65 @@
+.resume {
+  margin: 50px 0px;
+  padding: 50px 0px;
+  background: $headerBackgroundColor;
+  .contaner {
+    position: relative;
+  }
+  .bigRrsumeDiv {
+    position: relative;
+    .resumeButtons{
+      position: absolute;
+      width: 100%;
+      bottom: 30%;
+      padding: 0px 40px;
+      @include larg-screen {
+        padding: 0px 100px;
+      }
+      @include phone {
+        padding: 0px;
+      }
+        .fa-angle-left {
+          float: left;
+          @extend %resButtonsIcons;
+          &:hover {
+            background: rgb(143, 143, 181);
+            color: #00ff14;
+          }
+        }
+        .fa-angle-right {
+          float: right;
+          @extend %resButtonsIcons;
+          &:hover {
+            background: rgb(143, 143, 181);
+            color: #00ff14;
+          }
+        }
+    }
+    .clanets {
+      text-align: center;
+      margin-top: 50px;
+      display: none;
+      img {
+        height: 250px;
+        width: 250px;
+        margin: 0px auto;
+        border-radius: 50%;
+      }
+      .clanetName {
+        color: $minColor;
+        font-size: 25px;
+        margin: 10px;
+      }
+      .clantJop {
+        color: #a3a3b7;
+        font-weight: bold;
+        margin: 0px;
+      }
+      .clanetSeys {
+        display: block;
+        color: #fff;
+        margin: 20px 0px;
+      }
+    }
+  }
+}
